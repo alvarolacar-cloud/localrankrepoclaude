@@ -336,7 +336,7 @@ img { display: block; }
 /* ── Card grid (negocios) ── */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 
@@ -727,7 +727,7 @@ img { display: block; }
 /* ── Featured business cards ── */
 .featured-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 .featured-card {
@@ -925,7 +925,7 @@ img { display: block; }
 /* ── Case mini cards (horizontal) ── */
 .case-mini-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 .case-mini {
@@ -1007,11 +1007,11 @@ img { display: block; }
   .card-grid { grid-template-columns: repeat(3, 1fr); }
   .benefit-grid { grid-template-columns: repeat(2, 1fr); }
   .footgrid { grid-template-columns: repeat(3, 1fr); }
-  .featured-grid { grid-template-columns: repeat(3, 1fr); }
+  .featured-grid { grid-template-columns: repeat(2, 1fr); }
   .cat-grid { grid-template-columns: repeat(3, 1fr); }
   .why-block { grid-template-columns: 1fr; }
   .why-left { display: none; }
-  .case-mini-grid { grid-template-columns: repeat(3, 1fr); }
+  .case-mini-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 800px) {
