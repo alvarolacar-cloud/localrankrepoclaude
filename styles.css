@@ -170,42 +170,45 @@ img { display: block; }
 /* ── Hero ── */
 .hero {
   background:
-    linear-gradient(90deg, #061b33 0%, #061b33 45%, rgba(6,27,51,.7) 60%, rgba(6,27,51,.15) 100%),
-    url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1600&auto=format&fit=crop') center right/cover;
-  min-height: 480px;
+    linear-gradient(90deg, rgba(5,23,45,.95) 0%, rgba(5,23,45,.85) 35%, rgba(5,23,45,.4) 60%, rgba(5,23,45,.05) 100%),
+    url('img/hero-bg.png') center right/cover;
+  min-height: 92vh;
   color: #fff;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
-.hero .container { padding-top: 68px; padding-bottom: 52px; }
+.hero .container { padding-top: 40px; padding-bottom: 40px; width: 100%; }
 
 .hero h1 {
-  font-size: 56px;
-  line-height: 1.05;
-  margin: 0 0 22px;
-  letter-spacing: -1px;
+  font-size: 52px;
+  line-height: 1.08;
+  margin: 0 0 18px;
+  letter-spacing: -1.5px;
+  max-width: 650px;
 }
 .hero h1 b { color: var(--blue2); }
 
 .hero > .container > p {
   font-size: 19px;
   line-height: 1.6;
-  max-width: 600px;
-  margin: 0 0 36px;
-  color: #c8d8ec;
+  max-width: 540px;
+  margin: 0 0 42px;
+  color: rgba(255,255,255,.8);
 }
 
 .searchbar {
   background: white;
   color: var(--text);
-  border-radius: 12px;
-  box-shadow: var(--shadow-lg);
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(0,0,0,.3);
   display: grid;
-  grid-template-columns: 1fr 1fr 220px;
-  gap: 16px;
-  padding: 24px;
-  max-width: 940px;
+  grid-template-columns: 1fr 1fr 240px;
+  gap: 18px;
+  padding: 30px 32px;
+  max-width: 960px;
 }
 
 .field label {
@@ -218,34 +221,35 @@ img { display: block; }
 
 .input-wrap {
   border: 1.5px solid var(--line);
-  border-radius: 8px;
-  padding: 0 16px;
-  background: #fafcff;
+  border-radius: 10px;
+  padding: 0 18px;
+  background: #f8fafd;
   display: flex;
   align-items: center;
-  gap: 10px;
-  transition: border-color .2s;
+  gap: 12px;
+  transition: border-color .2s, box-shadow .2s;
 }
 .input-wrap:hover,
-.input-wrap:focus-within { border-color: var(--blue2); }
+.input-wrap:focus-within { border-color: var(--blue2); box-shadow: 0 0 0 3px rgba(18,103,241,.1); }
 .input-wrap svg { flex-shrink: 0; }
 .input-wrap input {
   border: none;
   outline: none;
   background: transparent;
-  padding: 14px 0;
-  font-size: 14px;
+  padding: 16px 0;
+  font-size: 15px;
   font-family: inherit;
   color: var(--text);
   width: 100%;
 }
-.input-wrap input::placeholder { color: #6b7687; }
+.input-wrap input::placeholder { color: #8a96a8; }
 
 .btn-search {
   align-self: end;
   text-align: center;
-  font-size: 15px;
-  padding: 15px 24px;
+  font-size: 16px;
+  padding: 17px 28px;
+  font-weight: 800;
 }
 
 .checks {
