@@ -170,43 +170,36 @@ img { display: block; }
 /* ── Hero ── */
 .hero {
   background:
-    linear-gradient(90deg, rgba(5,23,45,.6) 0%, rgba(5,23,45,.85) 30%, rgba(5,23,45,.95) 55%, rgba(5,23,45,.98) 100%),
-    url('img/hero-bg.png') left center/cover;
-  min-height: 420px;
+    linear-gradient(180deg, rgba(5,23,45,.88) 0%, rgba(5,23,45,.82) 100%),
+    url('img/hero-bg.png') center/cover;
   color: #fff;
-  position: relative;
-  overflow: hidden;
+  padding: 56px 0 48px;
 }
 
-.hero .container { padding-top: 48px; padding-bottom: 48px; }
-
 .hero h1 {
-  font-size: 52px;
-  line-height: 1.08;
-  margin: 0 0 18px;
-  letter-spacing: -1.5px;
-  max-width: 650px;
+  font-size: 34px;
+  line-height: 1.2;
+  margin: 0 0 24px;
+  font-weight: 900;
 }
 .hero h1 b { color: var(--blue2); }
 
-.hero > .container > p {
-  font-size: 19px;
-  line-height: 1.6;
-  max-width: 540px;
-  margin: 0 0 42px;
-  color: rgba(255,255,255,.8);
+.hero-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 28px;
+  color: rgba(255,255,255,.65);
 }
 
 .searchbar {
   background: white;
   color: var(--text);
-  border-radius: 16px;
-  box-shadow: 0 24px 60px rgba(0,0,0,.3);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.15);
   display: grid;
-  grid-template-columns: 1fr 1fr 240px;
-  gap: 18px;
-  padding: 30px 32px;
-  max-width: 960px;
+  grid-template-columns: 1fr 1fr 200px;
+  gap: 12px;
+  padding: 20px 24px;
 }
 
 .field label {
@@ -1047,8 +1040,9 @@ img { display: block; }
   }
   .menu a::after { display: none; }
 
-  .hero h1 { font-size: 36px; }
-  .hero > .container > p { font-size: 16px; }
+  .hero h1 { font-size: 26px; }
+  .hero-subtitle { font-size: 14px; }
+  .hero { padding: 36px 0 32px; }
 
   .searchbar { grid-template-columns: 1fr; }
 
