@@ -626,6 +626,109 @@ img { display: block; }
   text-align: center;
 }
 
+/* ── FAQ ── */
+.faq-list {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.faq {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: box-shadow .2s;
+}
+.faq:hover { box-shadow: var(--shadow); }
+.faq summary {
+  padding: 20px 24px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: '+';
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--blue);
+  flex-shrink: 0;
+  transition: transform .2s;
+}
+.faq[open] summary::after {
+  content: '\2212';
+  transform: rotate(180deg);
+}
+.faq p {
+  padding: 0 24px 20px;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* ── Breadcrumb links ── */
+.breadcrumb a {
+  color: var(--blue);
+  transition: color .2s;
+}
+.breadcrumb a:hover { color: #0b4fc0; }
+
+/* ── Testimonial ── */
+.testimonial {
+  background: #f6f9fd;
+  border-left: 4px solid var(--blue);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 24px 28px;
+  margin: 20px 0;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--text);
+}
+.testimonial cite {
+  display: block;
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* ── Before/after labels ── */
+.before-after-label {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+/* ── Case detail lists ── */
+.case-detail ul {
+  padding-left: 20px;
+  margin: 12px 0 24px;
+}
+.case-detail li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #3a4a5e;
+}
+.case-detail h2 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+.case-detail p {
+  line-height: 1.7;
+  color: #3a4a5e;
+  margin-bottom: 16px;
+}
+
 /* ── Animations ── */
 .fade-up {
   opacity: 0;
