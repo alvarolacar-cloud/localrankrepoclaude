@@ -741,6 +741,7 @@ img { display: block; }
   border-radius: var(--radius);
   overflow: hidden;
   transition: transform .25s, box-shadow .25s;
+  position: relative;
 }
 .featured-card:hover {
   transform: translateY(-4px);
@@ -751,26 +752,72 @@ img { display: block; }
   height: 130px;
   object-fit: cover;
 }
+.featured-card .fc-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .3px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.fc-badge-green { background: rgba(0,156,73,.9); color: #fff; }
+.fc-badge-blue { background: rgba(8,112,248,.9); color: #fff; }
+.fc-badge-orange { background: rgba(230,126,0,.9); color: #fff; }
 .featured-card .fc-body {
   padding: 14px 16px;
 }
-.featured-card .fc-icon {
-  width: 32px;
-  height: 32px;
-  background: #eef5ff;
-  border-radius: 8px;
+.featured-card .fc-route {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: -28px 0 10px;
-  position: relative;
-  border: 2px solid #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  gap: 6px;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 6px;
 }
-.featured-card strong { display: block; font-size: 15px; margin-bottom: 4px; }
+.featured-card .fc-route .fc-arrow { color: var(--blue); font-weight: 700; }
+.featured-card strong { display: block; font-size: 15px; margin-bottom: 8px; }
+.featured-card .fc-metric {
+  font-size: 24px;
+  font-weight: 900;
+  color: #009c49;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+.featured-card .fc-metric-label {
+  font-size: 12px;
+  color: var(--muted);
+}
 .demand-high { color: #009c49; font-size: 13px; font-weight: 600; }
 .demand-very-high { color: #0870f8; font-size: 13px; font-weight: 600; }
 .demand-medium { color: #e67e00; font-size: 13px; font-weight: 600; }
+
+/* ── Filter tabs ── */
+.filter-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.filter-tab {
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  border: 1.5px solid var(--line);
+  background: #fff;
+  color: var(--text);
+  cursor: pointer;
+  transition: all .2s;
+}
+.filter-tab:hover { border-color: var(--blue); color: var(--blue); }
+.filter-tab.active {
+  background: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
+}
 
 /* ── Category columns ── */
 .cat-section { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 36px; }
