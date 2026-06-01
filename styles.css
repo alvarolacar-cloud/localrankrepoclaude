@@ -216,20 +216,30 @@ img { display: block; }
   color: var(--text);
 }
 
-.input {
+.input-wrap {
   border: 1.5px solid var(--line);
   border-radius: 8px;
-  padding: 14px 16px;
-  color: #6b7687;
+  padding: 0 16px;
   background: #fafcff;
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 14px;
   transition: border-color .2s;
 }
-.input:hover { border-color: var(--blue2); }
-.input svg { flex-shrink: 0; }
+.input-wrap:hover,
+.input-wrap:focus-within { border-color: var(--blue2); }
+.input-wrap svg { flex-shrink: 0; }
+.input-wrap input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 14px 0;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text);
+  width: 100%;
+}
+.input-wrap input::placeholder { color: #6b7687; }
 
 .btn-search {
   align-self: end;
