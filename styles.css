@@ -170,17 +170,15 @@ img { display: block; }
 /* ── Hero ── */
 .hero {
   background:
-    linear-gradient(90deg, rgba(5,23,45,.95) 0%, rgba(5,23,45,.85) 35%, rgba(5,23,45,.4) 60%, rgba(5,23,45,.05) 100%),
-    url('img/hero-bg.png') center right/cover;
-  min-height: 92vh;
+    linear-gradient(90deg, rgba(5,23,45,.6) 0%, rgba(5,23,45,.85) 30%, rgba(5,23,45,.95) 55%, rgba(5,23,45,.98) 100%),
+    url('img/hero-bg.png') left center/cover;
+  min-height: 420px;
   color: #fff;
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: center;
 }
 
-.hero .container { padding-top: 40px; padding-bottom: 40px; width: 100%; }
+.hero .container { padding-top: 48px; padding-bottom: 48px; }
 
 .hero h1 {
   font-size: 52px;
