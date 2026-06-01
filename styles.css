@@ -177,10 +177,10 @@ img { display: block; }
 }
 
 .hero h1 {
-  font-size: 34px;
-  line-height: 1.2;
-  margin: 0 0 24px;
-  font-weight: 900;
+  font-size: 17px;
+  line-height: 1.4;
+  margin: 0 0 20px;
+  font-weight: 800;
 }
 .hero h1 b { color: var(--blue2); }
 
@@ -197,27 +197,30 @@ img { display: block; }
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,.15);
   display: grid;
-  grid-template-columns: 1fr 1fr 200px;
+  grid-template-columns: 1fr 1fr 180px;
+  align-items: end;
   gap: 12px;
-  padding: 20px 24px;
+  padding: 16px 20px;
+  max-width: 940px;
+  height: 95px;
 }
 
 .field label {
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 800;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   color: var(--text);
 }
 
 .input-wrap {
   border: 1.5px solid var(--line);
-  border-radius: 10px;
-  padding: 0 18px;
+  border-radius: 8px;
+  padding: 0 14px;
   background: #f8fafd;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   transition: border-color .2s, box-shadow .2s;
 }
 .input-wrap:hover,
@@ -227,8 +230,8 @@ img { display: block; }
   border: none;
   outline: none;
   background: transparent;
-  padding: 16px 0;
-  font-size: 15px;
+  padding: 12px 0;
+  font-size: 13px;
   font-family: inherit;
   color: var(--text);
   width: 100%;
@@ -238,8 +241,8 @@ img { display: block; }
 .btn-search {
   align-self: end;
   text-align: center;
-  font-size: 16px;
-  padding: 17px 28px;
+  font-size: 14px;
+  padding: 13px 20px;
   font-weight: 800;
 }
 
