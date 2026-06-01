@@ -173,77 +173,75 @@ img { display: block; }
     linear-gradient(180deg, rgba(5,23,45,.88) 0%, rgba(5,23,45,.82) 100%),
     url('img/hero-bg.png') center/cover;
   color: #fff;
-  padding: 56px 0 48px;
+  padding: 80px 0 90px;
 }
 
 .hero h1 {
-  font-size: 17px;
+  font-size: 24px;
   line-height: 1.4;
-  margin: 0 0 20px;
-  font-weight: 800;
-}
-.hero h1 b { color: var(--blue2); }
-
-.hero-subtitle {
-  font-size: 16px;
-  line-height: 1.5;
   margin: 0 0 28px;
-  color: rgba(255,255,255,.65);
+  font-weight: 400;
+  font-style: normal;
 }
+.hero h1 b { color: var(--blue2); font-weight: 600; }
 
 .searchbar {
   background: white;
   color: var(--text);
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,.15);
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.12);
   display: grid;
   grid-template-columns: 1fr 1fr 180px;
   align-items: end;
-  gap: 12px;
-  padding: 16px 20px;
-  max-width: 940px;
-  height: 95px;
+  gap: 16px;
+  padding: 16px;
+  max-width: 1120px;
 }
 
 .field label {
   display: block;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 6px;
   color: var(--text);
 }
 
 .input-wrap {
-  border: 1.5px solid var(--line);
-  border-radius: 8px;
-  padding: 0 14px;
-  background: #f8fafd;
+  border: 1px solid #b2b2b2;
+  border-radius: 4px;
+  padding: 0 12px;
+  background: #fff;
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: border-color .2s, box-shadow .2s;
+  height: 44px;
+  transition: border-color .2s;
 }
 .input-wrap:hover,
-.input-wrap:focus-within { border-color: var(--blue2); box-shadow: 0 0 0 3px rgba(18,103,241,.1); }
+.input-wrap:focus-within { border-color: var(--blue); }
 .input-wrap svg { flex-shrink: 0; }
 .input-wrap input {
   border: none;
   outline: none;
   background: transparent;
-  padding: 12px 0;
-  font-size: 13px;
+  padding: 0;
+  font-size: 16px;
   font-family: inherit;
   color: var(--text);
   width: 100%;
+  height: 100%;
 }
 .input-wrap input::placeholder { color: #8a96a8; }
 
 .btn-search {
   align-self: end;
   text-align: center;
-  font-size: 14px;
-  padding: 13px 20px;
-  font-weight: 800;
+  font-size: 16px;
+  padding: 0 22px;
+  font-weight: 500;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 22px;
 }
 
 .checks {
