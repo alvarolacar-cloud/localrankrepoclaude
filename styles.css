@@ -529,10 +529,44 @@ img { display: block; }
 /* ── Card grid (negocios) ── */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
 }
 
+.sector-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+  cursor: pointer;
+}
+.sector-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+  border-color: var(--blue);
+}
+.sector-card-icon {
+  width: 44px;
+  height: 44px;
+  background: #eef5ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+}
+.sector-card strong {
+  font-size: 14px;
+  color: var(--text);
+}
+
+/* Legacy tile styles for subpages */
 .tile {
   height: 140px;
   border-radius: var(--radius);
@@ -546,7 +580,6 @@ img { display: block; }
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0,0,0,.18);
 }
-
 .tile img {
   width: 100%;
   height: 100%;
@@ -558,7 +591,6 @@ img { display: block; }
   filter: brightness(.45);
   transform: scale(1.06);
 }
-
 .tile strong {
   position: absolute;
   left: 16px;
@@ -566,13 +598,6 @@ img { display: block; }
   color: #fff;
   font-size: 16px;
   z-index: 1;
-}
-.tile small {
-  position: absolute;
-  left: 16px;
-  bottom: 36px;
-  color: #e6eef9;
-  font-weight: 700;
 }
 
 /* ── City grid ── */
@@ -1197,7 +1222,7 @@ img { display: block; }
 
 /* ── Responsive ── */
 @media (max-width: 1024px) {
-  .card-grid { grid-template-columns: repeat(3, 1fr); }
+  .card-grid { grid-template-columns: repeat(4, 1fr); }
   .benefit-grid { grid-template-columns: repeat(2, 1fr); }
   .footgrid { grid-template-columns: repeat(3, 1fr); }
   .featured-grid { grid-template-columns: repeat(2, 1fr); }
